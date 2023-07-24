@@ -16,7 +16,7 @@ public class MyWorld extends World
     public MyWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(800, 600, 1); 
+        super(800, 1200, 1); 
 
         prepare();
     }
@@ -96,38 +96,5 @@ public class MyWorld extends World
         addObject(cloud9,433,747);
         player1.setLocation(171,1082);
         player1.setLocation(143,1128);
-        player1.setLocation(279,450);
-        removeObject(cloud7);
-        player1.setLocation(88,502);
-        cloud6.setLocation(416,347);
-        cloud6.setLocation(416,347);
-        cloud6.setLocation(416,347);
-        removeObject(cloud6);
-        ground12.setLocation(421,596);
-        cloud9.setLocation(356,388);
-        ground12.setLocation(425,451);
-        ground10.setLocation(356,444);
-        ground10.setLocation(342,406);
-        cloud8.setLocation(329,374);
-        ground12.setLocation(382,389);
-        ground10.setLocation(376,397);
-        ground17.setLocation(297,457);
-        removeObject(ground17);
-        removeObject(ground18);
-        removeObject(cloud8);
-        removeObject(cloud9);
-        removeObject(ground16);
-        removeObject(ground12);
-        removeObject(ground10);
-        removeObject(ground4);
-        ground19.setLocation(748,421);
-        ground15.setLocation(439,561);
-        ground11.setLocation(431,552);
-        ground11.setLocation(323,539);
-        ground11.setLocation(339,563);
-        removeObject(ground15);
-        removeObject(ground11);
-        removeObject(ground13);
-        ground14.setLocation(233,549);
     }
 }
