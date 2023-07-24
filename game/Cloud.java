@@ -18,15 +18,9 @@ public class Cloud extends Actor
      */
     public void act()
     {
-        //if(Greenfoot.isKeyDown("space"))
-        if(Greenfoot.isKeyDown("right"))
+        if(Greenfoot.isKeyDown("space"))
         {
-            move(-4);
-        }
-        //if(Greenfoot.isKeyDown("down"))
-        if(Greenfoot.isKeyDown("left"))
-        {
-            move(4);
+            setLocation(getX(),getY()+5);
         }
         if(getX()==0)
         {

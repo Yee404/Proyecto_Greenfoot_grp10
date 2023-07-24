@@ -63,28 +63,19 @@ public class MyWorld extends World
         addObject(ground11,150,728);
         Ground ground12 = new Ground();
         addObject(ground12,456,850);
-        Ground ground13 = new Ground();
-        addObject(ground13,150,971);
+        //Ground ground13 = new Ground();
+        //addObject(ground13,150,971);
         Ground ground14 = new Ground();
         addObject(ground14,131,1148);
         Ground ground15 = new Ground();
-        addObject(ground15,320,1148);
-        removeObject(ground15);
-        Ground ground16 = new Ground();
-        addObject(ground15,299,1146);
-        removeObject(ground15);
-        Ground ground17 = new Ground();
         addObject(ground15,295,1147);
-        removeObject(ground15);
+        Ground ground16 = new Ground();
+        addObject(ground16,293,1148);
+        Ground ground17 = new Ground();
+        addObject(ground17,627,727);
         Ground ground18 = new Ground();
-        addObject(ground15,293,1148);
+        addObject(ground18,433,1029);
         Ground ground19 = new Ground();
-        addObject(ground16,623,1090);
-        Ground ground20 = new Ground();
-        addObject(ground17,433,1029);
-        Ground ground21= new Ground();
-        addObject(ground18,659,728);
-        Ground ground22 = new Ground();
         addObject(ground19,329,609);
         Cloud cloud6 = new Cloud();
         addObject(cloud6,20,889);
@@ -94,7 +85,9 @@ public class MyWorld extends World
         addObject(cloud8,767,881);
         Cloud cloud9 = new Cloud();
         addObject(cloud9,433,747);
-        player1.setLocation(171,1082);
         player1.setLocation(143,1128);
+        end end = new end();
+        addObject(end,489,1153);
+        end.setLocation(127,1200);
     }
 }
