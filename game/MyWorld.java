@@ -28,10 +28,13 @@ public class MyWorld extends World
     private void prepare()
     {
         Ground ground = new Ground();
-        addObject(ground,61,551);
+        addObject(ground,150,548);
         Player1 player1 = new Player1();
         addObject(player1,61,520);
         Cloud cloud = new Cloud();
         addObject(cloud,404,141);
+
+        Ground ground2 = new Ground();
+        addObject(ground2,210,608);
     }
 }

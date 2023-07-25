@@ -18,13 +18,13 @@ public class Cloud extends Actor
      */
     public void act()
     {
-        if(Greenfoot.isKeyDown("space"))
-        {
-            setLocation(getX(),getY()+5);
-        }
-        if(getX()==0)
-        {
-            setLocation(getWorld().getWidth()-1,Greenfoot.getRandomNumber(170)+30);
-        }
+        //if(Greenfoot.isKeyDown("space"))
+        //{
+        //    setLocation(getX(),getY()+5);
+        //}
+        //if(getX()==0)
+        //{
+        //    setLocation(getWorld().getWidth()-1,Greenfoot.getRandomNumber(170)+30);
+        //}
     }
 }

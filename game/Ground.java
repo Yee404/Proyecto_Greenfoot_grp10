@@ -18,10 +18,10 @@ public class Ground extends Actor
      */
     public void act()
     {
-        if(Greenfoot.isKeyDown("space"))
-        {
-            setLocation(getX(),getY()+5);
-        }
+        //if(Greenfoot.isKeyDown("space"))
+        //{
+        //    setLocation(getX(),getY()+5);
+        //}
         //if(Greenfoot.isKeyDown("right"))
         //{
         //    move(-4);
