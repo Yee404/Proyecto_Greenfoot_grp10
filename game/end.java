@@ -1,23 +1,35 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 
 /**
- * Write a description of class end here.
+ * Write a description of class End here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class end extends Actor
+public class End extends Actor
 {
-    public end()
+    public End()
     {
-        getImage().scale(getImage().getWidth()*45,getImage().getHeight()/3);
+        getImage().scale(getImage().getWidth()*6,getImage().getHeight());
     }
     /**
-     * Act - do whatever the end wants to do. This method is called whenever
+     * Act - do whatever the End wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     public void act()
     {
-        // Add your action code here.
+        //if(Greenfoot.isKeyDown("space"))
+        //{
+        //    setLocation(getX(),getY()+5);
+        //}
+        //if(Greenfoot.isKeyDown("right"))
+        //{
+        //    move(-4);
+        //}
+        //if(Greenfoot.isKeyDown("down"))
+        //if(Greenfoot.isKeyDown("left"))
+        //{
+        //    move(4);
+        //}
     }
 }

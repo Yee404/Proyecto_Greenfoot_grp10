@@ -20,6 +20,7 @@ public class Player1 extends Actor
     {
         moveAround();
         checkFalling();
+        checkFalling2();
     }
     private void fall()
     {
@@ -36,7 +37,7 @@ public class Player1 extends Actor
         {
             move(-4);
         }
-        if (Greenfoot.isKeyDown("space")&&(onGround()==true))
+        if (Greenfoot.isKeyDown("up")&&(onGround()==true))
         {
             vSpeed = jumpHeight;
             fall();
@@ -46,6 +47,13 @@ public class Player1 extends Actor
     {
         Actor under = getOneObjectAtOffset(0, getImage().getHeight()/2, Ground.class);
         return under != null;
+
+    }
+    boolean onEnd()
+    {
+        Actor under = getOneObjectAtOffset(0, getImage().getHeight()/2, Ground.class);
+        return under != null;
+
     }
     public void checkFalling()
     {
@@ -53,6 +61,16 @@ public class Player1 extends Actor
         {
             fall();
         }
+    }
+        public void checkFalling2()
+    {   
+        
+        
+        if (onEnd()== false)
+        {
+            fall();
+        }
+
         //if (onGround()== false)
         //{
         //    vSpeed = 0;
