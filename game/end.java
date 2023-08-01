@@ -10,7 +10,7 @@ public class End extends Actor
 {
     public End()
     {
-        getImage().scale(getImage().getWidth()*6,getImage().getHeight());
+        getImage().scale(getImage().getWidth()*3,getImage().getHeight()/4);
     }
     /**
      * Act - do whatever the End wants to do. This method is called whenever

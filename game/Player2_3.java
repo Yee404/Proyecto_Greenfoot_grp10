@@ -6,13 +6,13 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Player1 extends Actor
+public class Player2_3 extends Actor
 {
     private int vSpeed = 0;
     private int acceleration = 1;
     private int jumpHeight= -20;
     
-    Level1 thisGame;
+    Level3_3 thisGame;
     /**
      * Act - do whatever the player1 wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -31,14 +31,14 @@ public class Player1 extends Actor
     }
     public void moveAround()
     {
-        if(Greenfoot.isKeyDown("right"))
+        if(Greenfoot.isKeyDown("d"))
         {
             if(getX()>-5)
                 move(4);
             else
                 move(-4);
         }
-        if(Greenfoot.isKeyDown("left"))
+        if(Greenfoot.isKeyDown("a"))
         {
             //move(-4);
             if(getX()<1240)
@@ -46,15 +46,12 @@ public class Player1 extends Actor
             else
                 move(4);
         }
-        if (Greenfoot.isKeyDown("up")&&(onGround()==true))
+        if (Greenfoot.isKeyDown("w")&&(onGround()==true))
         {
             vSpeed = jumpHeight;
             fall();
         }
-        //if (Greenfoot.isKeyDown("up")&&(onEnd()==false))
-        //{
-        //    fall();
-        //}
+        
     }
     boolean onGround()
     {
@@ -87,4 +84,5 @@ public class Player1 extends Actor
             thisGame.score++;
         }
     }
+    
 }

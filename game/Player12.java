@@ -6,13 +6,13 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Player1 extends Actor
+public class Player12 extends Actor
 {
     private int vSpeed = 0;
     private int acceleration = 1;
     private int jumpHeight= -20;
     
-    Level1 thisGame;
+    Level1_1 thisGame;
     /**
      * Act - do whatever the player1 wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -51,10 +51,7 @@ public class Player1 extends Actor
             vSpeed = jumpHeight;
             fall();
         }
-        //if (Greenfoot.isKeyDown("up")&&(onEnd()==false))
-        //{
-        //    fall();
-        //}
+        
     }
     boolean onGround()
     {
